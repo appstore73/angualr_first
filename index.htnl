@@ -1,0 +1,22 @@
+<html ng-app="alamApp">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="js/part1.js"></script>
+</head>
+<body>
+
+<div ng-controller="myCtrl" >
+{{name}}
+{{school}}
+</div>
+<div ng-controller="mysecondCtrl" >
+{{name}}
+{{school}}
+<input type="text" name="name" ng-model="name" style="background-color: {{name}};">
+<p ng-bind="name"></p>
+
+</div>
+
+</body>
+
+</html>
